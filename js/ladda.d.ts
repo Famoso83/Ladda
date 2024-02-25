@@ -1,21 +1,4 @@
-export interface LaddaButton {
-    start(): LaddaButton,
-    startAfter(delay: number): LaddaButton,
-    stop(): LaddaButton,
-    toggle(): LaddaButton,
-    setProgress(progress: number): void,
-    isLoading(): boolean,
-    remove(): void,
-}
 
-export interface BindOptions {
-    /**
-     * Number of milliseconds to wait before automatically cancelling the animation.
-     */
-    timeout?: number,
-
-    /**
-     * A function to be called with the Ladda instance when a target button is clicked.
      */
     callback?: (instance: LaddaButton) => void,
 }
